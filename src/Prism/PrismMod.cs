@@ -60,6 +60,10 @@ public sealed class PrismMod : Mod {
             var ptr = NativeLibrary.Load(filePath);
             Logger.Info($"Loaded libveldrid-spirv native library @ 0x{ptr:X8}.");
         }
+
+        // TODO: What options matter for shader compilation?
+        /*var veldridGdOptions = new GraphicsDeviceOptions();
+        var veldridGd = VeldridStartup.CreateDefaultOpenGlGraphicsDevice(veldridGdOptions, Main.instance.Window.Handle);*/
     }
 
     private static (string os, string arch) GetRid() {

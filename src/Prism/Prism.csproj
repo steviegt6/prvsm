@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-    <Import Project="../AomojiVanity.Build/AomojiVanity.Build.targets"/>
+    <Import Project="../AomojiVanity.Build/AomojiVanity.Build.targets" />
 
     <PropertyGroup>
         <AssemblyName>Prism</AssemblyName>
@@ -11,18 +11,18 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="JetBrains.Annotations" Version="2022.3.1"/>
+        <PackageReference Include="JetBrains.Annotations" Version="2022.3.1" />
     </ItemGroup>
 
     <ItemGroup>
-        <None Remove="lib\linux-x64\libveldrid-spirv.so"/>
-        <EmbeddedResource Include="lib\linux-x64\libveldrid-spirv.so"/>
-        <None Remove="lib\osx-x64\libveldrid-spirv.dylib"/>
-        <EmbeddedResource Include="lib\osx-x64\libveldrid-spirv.dylib"/>
-        <None Remove="lib\win-x64\libveldrid-spirv.dll"/>
-        <EmbeddedResource Include="lib\win-x64\libveldrid-spirv.dll"/>
-        <None Remove="lib\win-x86\libveldrid-spirv.dll"/>
-        <EmbeddedResource Include="lib\win-x86\libveldrid-spirv.dll"/>
+        <None Remove="lib\linux-x64\libveldrid-spirv.so" />
+        <EmbeddedResource Include="lib\linux-x64\libveldrid-spirv.so" />
+        <None Remove="lib\osx-x64\libveldrid-spirv.dylib" />
+        <EmbeddedResource Include="lib\osx-x64\libveldrid-spirv.dylib" />
+        <None Remove="lib\win-x64\libveldrid-spirv.dll" />
+        <EmbeddedResource Include="lib\win-x64\libveldrid-spirv.dll" />
+        <None Remove="lib\win-x86\libveldrid-spirv.dll" />
+        <EmbeddedResource Include="lib\win-x86\libveldrid-spirv.dll" />
     </ItemGroup>
 
     <ItemGroup>
