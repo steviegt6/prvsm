@@ -1,6 +1,6 @@
 # prvsm
 
-Prism (stylized **prvsm**) an experimental Terraria mod that tries to accomplish two tasks:
+Prism (stylized **prvsm**) is an experimental Terraria mod that tries to accomplish two tasks:
 
 1. bring OpenGl's GLSL shader language to FNA,
 2. and integrate SPIRV-Cross for loading SPIR-V bytecode.
