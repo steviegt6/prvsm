@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-    <Import Project="../AomojiVanity.Build/AomojiVanity.Build.targets" />
+    <Import Project="../AomojiVanity.Build/AomojiVanity.Build.targets"/>
 
     <PropertyGroup>
         <AssemblyName>Prism</AssemblyName>
@@ -11,7 +11,69 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="JetBrains.Annotations" Version="2022.3.1" />
+        <PackageReference Include="JetBrains.Annotations" Version="2022.3.1"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Remove="lib\linux-x64\libveldrid-spirv.so"/>
+        <EmbeddedResource Include="lib\linux-x64\libveldrid-spirv.so"/>
+        <None Remove="lib\osx-x64\libveldrid-spirv.dylib"/>
+        <EmbeddedResource Include="lib\osx-x64\libveldrid-spirv.dylib"/>
+        <None Remove="lib\win-x64\libveldrid-spirv.dll"/>
+        <EmbeddedResource Include="lib\win-x64\libveldrid-spirv.dll"/>
+        <None Remove="lib\win-x86\libveldrid-spirv.dll"/>
+        <EmbeddedResource Include="lib\win-x86\libveldrid-spirv.dll"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Reference Include="Microsoft.DotNet.PlatformAbstractions">
+            <HintPath>lib\Microsoft.DotNet.PlatformAbstractions.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.Extensions.DependencyModel">
+            <HintPath>lib\Microsoft.Extensions.DependencyModel.dll</HintPath>
+        </Reference>
+        <Reference Include="NativeLibraryLoader">
+            <HintPath>lib\NativeLibraryLoader.dll</HintPath>
+        </Reference>
+        <Reference Include="Newtonsoft.Json">
+            <HintPath>lib\Newtonsoft.Json.dll</HintPath>
+        </Reference>
+        <Reference Include="ppy.Veldrid">
+            <HintPath>lib\ppy.Veldrid.dll</HintPath>
+        </Reference>
+        <Reference Include="ppy.Veldrid.MetalBindings">
+            <HintPath>lib\ppy.Veldrid.MetalBindings.dll</HintPath>
+        </Reference>
+        <Reference Include="ppy.Veldrid.OpenGLBindings">
+            <HintPath>lib\ppy.Veldrid.OpenGLBindings.dll</HintPath>
+        </Reference>
+        <Reference Include="ppy.Veldrid.SPIRV">
+            <HintPath>lib\ppy.Veldrid.SPIRV.dll</HintPath>
+        </Reference>
+        <Reference Include="SharpGen.Runtime">
+            <HintPath>lib\SharpGen.Runtime.dll</HintPath>
+        </Reference>
+        <Reference Include="SharpGen.Runtime.COM">
+            <HintPath>lib\SharpGen.Runtime.COM.dll</HintPath>
+        </Reference>
+        <Reference Include="vk">
+            <HintPath>lib\vk.dll</HintPath>
+        </Reference>
+        <Reference Include="Vortice.D3DCompiler">
+            <HintPath>lib\Vortice.D3DCompiler.dll</HintPath>
+        </Reference>
+        <Reference Include="Vortice.Direct3D11">
+            <HintPath>lib\Vortice.Direct3D11.dll</HintPath>
+        </Reference>
+        <Reference Include="Vortice.DirectX">
+            <HintPath>lib\Vortice.DirectX.dll</HintPath>
+        </Reference>
+        <Reference Include="Vortice.DXGI">
+            <HintPath>lib\Vortice.DXGI.dll</HintPath>
+        </Reference>
+        <Reference Include="Vortice.Mathematics">
+            <HintPath>lib\Vortice.Mathematics.dll</HintPath>
+        </Reference>
     </ItemGroup>
 
 </Project>

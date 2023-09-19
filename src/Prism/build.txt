@@ -2,3 +2,4 @@
 author = Tomat
 homepage = https://discord.gg/Jyqt9HYyzM
 version = 1.0.0
+dllReferences = Microsoft.DotNet.PlatformAbstractions,Microsoft.Extensions.DependencyModel,NativeLibraryLoader,Newtonsoft.Json,ppy.Veldrid,ppy.Veldrid.MetalBindings,ppy.Veldrid.OpenGLBindings,ppy.Veldrid.SPIRV,SharpGen.Runtime,SharpGen.Runtime.COM,vk,Vortice.D3DCompiler,Vortice.Direct3D11,Vortice.DirectX,Vortice.DXGI,Vortice.Mathematics
