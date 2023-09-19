@@ -2,8 +2,10 @@
 using System.IO;
 using System.Runtime.InteropServices;
 using JetBrains.Annotations;
+using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.ModLoader;
+using Veldrid;
 
 namespace Prism;
 
@@ -61,6 +63,7 @@ public sealed class PrismMod : Mod {
             Logger.Info($"Loaded libveldrid-spirv native library @ 0x{ptr:X8}.");
         }
 
+        var a = typeof(Effect);
         // TODO: What options matter for shader compilation?
         /*var veldridGdOptions = new GraphicsDeviceOptions();
         var veldridGd = VeldridStartup.CreateDefaultOpenGlGraphicsDevice(veldridGdOptions, Main.instance.Window.Handle);*/

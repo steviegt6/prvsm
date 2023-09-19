@@ -424,4 +424,32 @@ internal struct MOJOSHADER_effect {
     public IntPtr techniques; // MOJOSHADER_effectTechnique*
     public int object_count;
     public IntPtr objects; // MOJOSHADER_effectObject*
+    public IntPtr current_technique; // MOJOSHADER_effectTechnique*
+    public int current_pass;
+    public int restore_shader_state;
+    public IntPtr state_changes; // MOJOSHADER_effectStateChanges*
+    public IntPtr current_vert_raw; // MOJOSHADER_effectShader*
+    public IntPtr current_pixl_raw; // MOJOSHADER_effectShader*
+    public IntPtr current_vert; // void*
+    public IntPtr current_pixl; // void*
+    public IntPtr prev_vertex_shader; // void*
+    public IntPtr prev_pixel_shader; // void*
+    public MOJOSHADER_effectShaderContext ctx;
+}
+
+[StructLayout(LayoutKind.Sequential)]
+internal struct MOJOSHADER_effectShaderContext {
+    public IntPtr compileShader; // void*
+    public IntPtr shaderAddRef; // void*
+    public IntPtr deleteShader; // void*
+    public IntPtr getParseData; // void*
+    public IntPtr bindShaders; // void*
+    public IntPtr getBoundShaders; // void*
+    public IntPtr mapUniformBufferMemory; // void*
+    public IntPtr unmapUniformBufferMemory; // void*
+    public IntPtr getError; // void*
+    public IntPtr shaderContext; // void*
+    public IntPtr m; // void*
+    public IntPtr f; // void*
+    public IntPtr malloc_data; // void*
 }
