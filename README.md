@@ -2,7 +2,7 @@
 
 Prism (stylized **prvsm**) is an experimental Terraria mod that tries to accomplish two tasks:
 
-1. bring OpenGl's GLSL shader language to FNA,
+1. bring OpenGL's GLSL shader language to FNA,
 2. and integrate SPIRV-Cross for loading SPIR-V bytecode.
 
 **USE AT YOUR OWN RISK:** This is hacky and works in an atypical manner; this is officially supported by neither FNA nor MojoShader.
