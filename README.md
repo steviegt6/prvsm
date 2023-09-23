@@ -9,4 +9,4 @@ Prism (stylized **prvsm**) is an experimental Terraria mod that tries to accompl
 
 ## The Name
 
-prvsm is Prism, Prism is prvsm. This is a subtle-but-not-really reference to [PRISM](https://github.com/TerrariaPrismTeam/Prism), which was developed by numerous people including [PoroCYon](https://gitlab.ulyssis.org/pcy), who also [developed the project that this is based on](https://gitlab.ulyssis.org/pcy/fnaglsl).
+prvsm is Prism, Prism is prvsm. This is a subtle-but-not-really reference to [PRISM](https://github.com/TerrariaPrismTeam/Prism), which was developed by numerous people including [PoroCYon](https://gitlab.ulyssis.org/pcy), who also [developed the project that this is ~~based on~~ inspired from](https://gitlab.ulyssis.org/pcy/fnaglsl).
